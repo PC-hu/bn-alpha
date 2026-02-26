@@ -8,6 +8,7 @@ export const tokenUrl = 'https://www.binance.com/bapi/defi/v1/public/wallet-dire
 const bestMarker = 'https://www.binance.com/fapi/v1/ticker/bookTicker?symbol=BTCUSDC'
 const prefix = 'https://fapi.binance.com';
 export const bestPriceUrl = prefix + '/fapi/v1/ticker/bookTicker';
+export const timeDuration = 5;
 // {
 //     "symbol": "BTCUSDT", // 交易对
 //     "bidPrice": "4.00000000", //最优买单价

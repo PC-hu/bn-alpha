@@ -10,7 +10,7 @@ import { SpeedInsights } from '@vercel/speed-insights/vue';
 import AlertComponent from '../../component/Item.vue'
 import FooterInfo from '../../component/Footer.vue';
 import { fetchData, getAlphaIds } from '../../service'
-import { tokenUrl, defaultCoins } from '../../constants';
+import { tokenUrl, defaultCoins, timeDuration } from '../../constants';
 // 类型定义
 interface TokenInfo {
   id: string
@@ -168,7 +168,7 @@ declare global {
 <template>
   <Analytics />
   <SpeedInsights />
-  <h3 class="title">最近 10 秒波动告警</h3>
+  <h3 class="title">最近 {{ timeDuration }} 秒波动告警</h3>
   <h2 class="sub-title">扶光学院专属 禁止外传</h2>
     <div id="errorDisplay" v-if="errorMessage " class="error-message error-style-1 fade-in">
       <div class="error-icon">⚠️</div>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { dataUrl } from "./constants";
+import { dataUrl, timeDuration } from "./constants";
 /**
  * 格式化数字为易读的字符串（K、M、B等单位）
  * @param {number|string} num - 要格式化的数字
@@ -82,7 +82,7 @@ export async function getAlphaIds(symbols, url) {
 export async function fetchData(currency) {
       try {
           const currentTime = Date.now();
-          const tenSecondsAgo = currentTime - 10 * 1000; // 9秒前的时间戳
+          const tenSecondsAgo = currentTime - timeDuration * 1000; // 9秒前的时间戳
           const id = currency.id;
           const params = {
               symbol: `${id}USDT`, // 根据实际情况修改
