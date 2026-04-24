@@ -17,4 +17,4 @@ export const timeDuration = 5;
 //     "askQty": "9.00000000", //挂单量
 //     "time": 1589437530011   // 撮合引擎时间
 //   }
-export const defaultCoins = ['PRL', 'GENIUS', 'EDGE'];
+export const defaultCoins = ['SOON', 'GENIUS', 'EDGE'];
